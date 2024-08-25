@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #6863FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;;
+}
+
+button {
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 60%;
+    background-color: white;
+    padding: 35px;
+}
+
+.form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.form input {
+    background-color: #F1F1F1;
+    padding: 15px;
+    outline: none;
+    border: none;
+    flex: 1;
+    min-width: 100px; 
+}
+
+.form button {
+    background-color: #6479FF;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin: 10px 0;
+    background-color: #E6E6E6;
+    color: #4e4b4b;
+    list-style-type: none;
+}
+
+.box {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #F8F8F8;
+}
+
+.btnDel {
+    background-color: #FF8787;
+    width: 80px;
+}
+
+.bottom p {
+    color: #ABD6A0;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+
+    .products {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .products {
+        font-size: 12px;
+    }
+}
